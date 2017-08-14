@@ -7,7 +7,7 @@
 <li>知乎账号：<a href="https://www.zhihu.com/people/Uncle-Keith/activities" target="_blank" rel="external">unclekeith</a>（活跃于CSS、JavaScript等前端话题的回答）</li>
 <li>GitHub：<a href="https://github.com/KeithChou" target="_blank" rel="external">https://github.com/KeithChou</a></li>
 <li>个人主页：<a href="https://keithchou.github.io">keithchou.github.io</a></li>
-<li>博客主页：<a href="https://www.cnblogs.com/unclekeith" target="_blank" rel="external">https://www.cnblogs.com/unclekeith</a>（37000+访问量）</li>
+<li>博客主页：<a href="https://www.cnblogs.com/unclekeith" target="_blank" rel="external">https://www.cnblogs.com/unclekeith</a>（5w+访问量）</li>
 <li>个人微信公号：KeithChou（20余篇原创文章，已停更）</li>
 </ul>
 <h3 id="获奖情况"><a href="#获奖情况" class="headerlink" title="获奖情况"></a>获奖情况</h3><ul>
@@ -20,28 +20,36 @@
 <li>大三上半学年 台球院长杯大赛 经贸学院团体赛第一名</li>
 </ul>
 <h3 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h3><ul>
-<li><p>2016.10 - 至今 | 服务于淘宝卖家的商品复制的按月付费软件 | 负责前端开发和php数据接口的提供</p>
+<li><p>2016.10 - 2017.06.26 | 服务于淘宝卖家的商品复制的按月付费软件 | 负责前端开发和php数据接口的提供</p>
 <ul>
 <li>两个后端（老师）、一个前端（本人）。</li>
 <li>项目中使用了webpack打包工具对项目进行JS\CSS压缩合并、抽离公共代码、图片base转码等操作。使用artTemplate模板引擎对数据进行渲染，使用CSS预处理器SASS书写CSS。</li>
-<li>在处理数据方面，使用Promise方式来获取数据，解决jQuery多层回调，等待请求返回再执行其他请求的问题。通过catch方法捕获错误，更好的实现代码的debug。</li>
-<li>项目中，使用模块模式最大程度减少全局变量污染，确保js文件中只有一个全局变量，通过模块的公共API来访问私有变量。</li>
+<li>项目技术选型: jQuery + SASS + + ArtTemplate + Webpack</li>
+<li>在性能优化方面，为了减少HTTP请求数量：1. 使用webpack合并JS/CSS模块成一个common文件；2. 图片base64嵌入在CSS中。为了减少响应体大小：1. 压缩HTML/CSS/JavaScript模块。</li>
+<li>由于项目中依赖于某个接口返回的数据，使用Promise封装了ajax逐层回调的操作。其他请求在第一个接口返回数据时可以同时发送，互不影响。</li>
+<li>使用模块模式最大程度减少全局变量污染，确保js文件中只有一个全局变量，通过模块的公共API来访问私有变量。</li>
 <li>由于项目中使用了分页插件，于是自己动手写了一个pagination插件。</li>
-<li>阅读过jQuery2.1.4版本的源码。从一个API的实现开始阅读，再慢慢扩展。明白$.extend实现深浅复制和扩展插件的原理等。</li>
+<li>阅读过jQuery2+版本的源码。从一个API的实现开始阅读，再慢慢扩展。如extend方法、on方法、parents方法、childrens方法等。</li>
 </ul>
 </li>
-<li><p>2017.04 在项目开发了基于jQuery的分页插件，提供参数配置，提供回调函数接口，分页效果类似于淘宝、京东等分页效果。可通过npm安装，目前已经移植到项目中。</p>
+<li><p>2017.04 在项目开发了基于jQuery的分页插件。提供参数配置，如默认页码总数，当前页，前后分页个数(出现省略号的位置)，出现省略号的页数等。提供ajax接口，根据服务器返回的总页数动态设置总页数。分页效果类似于淘宝、京东等分页效果。目前已经移植到项目中。</p>
 </li>
 </ul>
+<h3 id="实习经历"><a href="#实习经历" class="headerlink" title="实习经历"></a>实习经历</h3><h4 id="小恩爱-前端开发实习生-2017-06-27"><a href="#小恩爱-前端开发实习生-2017-06-27" class="headerlink" title="小恩爱 - 前端开发实习生  (2017.06.27 - )"></a>小恩爱 - 前端开发实习生  (2017.06.27 - )</h4><ol>
+<li>在小恩爱中，主要负责HTML5页面的开发和部分后台管理系统的开发。</li>
+<li>曾负责app内部三个游戏的后台管理系统的开发。主要时一些表单操作。基于有相同部分，抽象成公共组件，通过props与自定义事件实现父子组件的通信。</li>
+<li>曾开发过情侣号销售项目。由于在这个下单和提醒功能使用新架构，而支付功能使用旧架构，于是在js签名和底层Ajax做了修改。目前在项目中正常运行。</li>
+</ol>
 <h3 id="个人技能"><a href="#个人技能" class="headerlink" title="个人技能"></a>个人技能</h3><ul>
 <li>具备独立阅读英文文档的能力。</li>
 <li>掌握HTML(5)、CSS(3)、JavaScript、jQuery方面的知识。</li>
 <li>掌握CSS盒模型、CSS中常见布局模式，能够独立编写CSS代码。</li>
-<li>掌握JS中闭包，作用域链、继承、this等相关概念，对ES6有一定的了解。能够使用ES6进行编码。</li>
+<li>掌握JS中闭包，作用域链、继承、this等相关概念。</li>
+<li>掌握ES6，能够熟练使用ES6知识进行开发。</li>
 <li>掌握Webpack、Gulp等打包工具，掌握Sass、Less等CSS预处理工具。</li>
-<li>了解Vue。使用Vue2.0开发过外卖web app。</li>
+<li>理解Vue。使用过vue全家桶开发单页应用；使用Vue2.0开发过外卖web app，单页应用页面。</li>
 <li>了解PHP，能够使用PHP进行数据方面的操作。</li>
-<li>了解HTTP协议，了解简单的数据结构与算法，了解计算机网络相关概念。</li>
+<li>了解HTTP协议，了解数据结构与算法，了解计算机网络相关概念。</li>
 <li>具有良好的沟通能力和自学能力，拥有发现问题和解决问题的能力。</li>
 </ul>
 <h3 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h3><p>我本人自我感觉，是一个比较喜欢安静，善于思考的一个男生。对感兴趣的事情可以特别的专注，每天都可以花很长的时间投身于兴趣中。乐观，开朗，喜欢交朋友。不认识我的朋友一开始会觉得我高冷，可是认识了之后会发现我是一个‘疯子’。拥有双重性格，喜欢独立思考问题。</p>
